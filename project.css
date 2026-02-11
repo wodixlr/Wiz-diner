@@ -7,6 +7,7 @@
 body {
   /* background-color: rgb(255, 140, 0); */
   background-color: #f8efeb;
+  position: relative;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -64,13 +65,25 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+  position: relative;
+  /* filter: grayscale(0.1); */
+}
+
+.hero::after{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0, 0, 0.9);
 }
 
 .hero-container {
   /* height: 100vh; */
+  display: none;
   display: flex;
   align-items: center;
   padding: 0 7rem;
+  justify-content: space-between;
+  gap: 5rem;
 }
 
 input {
@@ -103,6 +116,11 @@ input {
 
 .container {
   padding-top: -100px;
+  margin-bottom: 20px
+}
+
+.container form{
+  margin-top:20px;
 }
 
 .container textarea {
@@ -139,6 +157,7 @@ color: #fff;
 }
 
 .container {
+  margin-top: 50px;
   border-radius: 10px;
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.5);
@@ -159,6 +178,15 @@ color: #fff;
   cursor: pointer;
 }
 
+.btn5 {
+  color: orangered;
+}
+
+.btn5:hover {
+  background-color: orangered;
+  color: white;
+}
+
 .btn3:hover {
   transform: translateY(-5px);
   transition: all 0.5s;
@@ -168,8 +196,13 @@ color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(71, 71, 71);
+  background-color: rgb(0, 0, 0);
   padding: 10px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 500;
 }
 
 .navbar1 ul:not(.dropdown ul) {
@@ -197,7 +230,7 @@ color: #fff;
 }
 
 .cook {
-  color: rgb(238, 255, 0);
+  color:rgb(255, 255, 255);
   text-decoration: wavy;
 }
 
@@ -380,6 +413,11 @@ color: #fff;
 
 .abt2:hover {
   box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.1);
+}
+
+.abt2 .fa-award {
+  color: orangered;
+  font-size: 1.8rem;
 }
 
 .abt2 .fa-trophy {
@@ -588,6 +626,8 @@ color: #fff;
   border-radius: 10px;
   background-color: #ffffff;
   box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+  width:528px;
+  
 }
 
 .val-1 img:hover {
@@ -624,10 +664,9 @@ color: #fff;
   margin-bottom: 20px;
 }
 
-.val-special p{
+.val-special p {
   text-align: center;
 }
-
 
 .val-day span {
   /* display: flex; */
@@ -635,12 +674,13 @@ color: #fff;
   margin-bottom: 50px;
   justify-content: center;
   align-items: center;
-  background-color: #EDD8CE;
+  background-color: #edd8ce;
   padding: 10px 30px;
   border-radius: 100px;
-  color: #E08356;
+  color: #e08356;
 }
-.val-limited, .val-day{
+.val-limited,
+.val-day {
   /* margin: auto; */
   display: flex;
   justify-content: center;
@@ -652,7 +692,7 @@ color: #fff;
   display: inline-block;
   border-radius: 10px;
   padding: 10px 10px;
-  
+
   /* width: 150px; */
 }
 /* TESTIMONIALS */
@@ -661,11 +701,13 @@ color: #fff;
   background-color: #ffffff;
   box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
   width: 400px;
-  padding: 10px 10px;
+  padding: 20px;
 }
 
-.test-text{
+.test-text {
+  margin-top:20px;
   display: flex;
+  align-items: center;
   gap: 1rem;
 }
 
@@ -689,19 +731,106 @@ color: #fff;
 }
 .star {
   display: flex;
-  color: gold;
+  color: rgb(194, 78, 36);
 }
 
 .testimonial img {
   border-radius: 50%;
-  height: 50px;
-  width: 50px;
+  height: 30px;
+  width: 30px;
+  margin-top: 5px;
+}
+
+/* Chefs */
+
+.che {
+  text-align: center;
+}
+
+
+
+.chefbody {
+  display: flex;
+  gap: 2rem;
+}
+.chefhead {
+  margin-bottom: 50px;
+}
+.chefimages {
+  display: flex;
+  gap: 2rem;
+}
+
+.chef1 img {
+  border-radius: 10px;
+  width: 250px;
+
+  height: 350px;
+}
+
+.chefimg1 img {
+  border-radius: 20px;
+  height: 400px;
+  margin-bottom: 50px;
+}
+
+.cheftext1 {
+  margin-top: 70px;
+}
+
+.meet{
+  margin-bottom: 10px;
+  color: orangered
+}
+
+.cheftext2 {
+  background-color: white;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  width: 250px;
+  padding:20px 10px;
+}
+.cheftext1 h5,
+h1 {
+  margin-bottom: 10px;
+}
+
+.chefs {
+  padding: 0px 120px;
 }
 
 /* FOOTER */
+.emailbtn {
+  display: flex;
+  margin-top: 30px;
+}
+.emailbtn button {
+  border: none;
+
+  border: 1px solid white;
+  height: 100%;
+  display: inline-block;
+}
+
+.emailbtn span {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.emailbtn input,
+.emailbtn button {
+  padding: 3px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
 .footer {
   background-color: black;
   color: #fff;
+}
+
+.footer-container .fa-angle-right{
+  color: orangered;
 }
 
 .footer-container {
@@ -731,11 +860,17 @@ color: #fff;
   width: 400px;
 }
 
+.fa-location-dot,
+.fa-phone,
+.fa-envelope {
+  color: orangered;
+}
+
 .social span {
-  height: 20px;
-  width: 20px;
+  height: 10px;
+  width: 10px;
   background-color: #4b4747;
-  padding: 10px;
+  padding: 5px;
   text-align: center;
   border-radius: 50%;
 }
@@ -763,4 +898,105 @@ color: #fff;
   color: #fff;
 }
 
+/* hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 3px;
+  cursor: pointer;
+  z-index: 100;
+}
 
+.hamburger span {
+  background-color: #fff;
+  width: 20px;
+  height: 2px;
+}
+
+.navbar1 ul:not(.dropdown ul).active {
+  right: 0;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(8px, 8px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(-2px, -1px);
+}
+
+.culinary2 {
+  display: none;
+}
+
+/* Responsive Design */
+
+@media (max-width: 48em) {
+  .navbar1 ul:not(.dropdown ul) {
+    flex-direction: column;
+    height: 40vh;
+    width: 200px;
+    right: -300px;
+    position: absolute;
+    top: 0;
+    background-color: blue;
+    padding: 0px 20px;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .hero-container {
+    flex-direction: column;
+  }
+
+  .hero-first{
+    background-color: black;
+  }
+
+  .culinary {
+    font-size: 40px;
+  }
+  .about-container {
+    flex-direction: column;
+  }
+
+  .menu-nav ul {
+    display: none;
+
+    /* flex-wrap: wrap; */
+  }
+
+  .menu-container {
+    flex-direction: column;
+  }
+
+  .menu-content {
+    width: 100%;
+  }
+
+  .testimonial-cont {
+    flex-direction: column;
+  }
+  .testimonial-content {
+    width: 100%;
+  }
+
+  .footer-container div:first-child {
+    width: 800px;
+  }
+
+  .culinary {
+    display: none;
+  }
+
+  .culinary2 {
+    display: block;
+    color: white;
+  }
+}

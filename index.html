@@ -17,59 +17,46 @@
     <!-- <div class="body1"> -->
     <nav class="navbar1">
       <h4 class="Platia">Wiz's Diner</h4>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#menu">Menu</a></li>
-        <li><a href="#">Book A Table</a></li>
-        <li><a href="#chefs">Chefs</a></li>
-        <li><a href="#events">Event</a></li>
-        <!-- 
-        <select name="" id="" class="Dropdown">
-          <option value="">Dropdown 1</option>
-          <option value="">Deep Dropdown</option>
-          <option value="">Dropdown 2</option>
-          <option value="">Dropdown 3</option>
-          <option value=""> Dropdown 4</option>
-          <option value="">Dropdown 5</option>
-        </select> -->
+      <ul id="navmenu">
+        <li><a href="/" class="navlink">Home</a></li>
+        <li><a href="#about" class="navlink">About</a></li>
+        <li><a href="#menu" class="navlink">Menu</a></li>
+        <li><a href="#" class="navlink">Book A Table</a></li>
+        <li><a href="#chefs" class="navlink">Chefs</a></li>
+        <li><a href="#events" class="navlink">Event</a></li>
 
-        <li class="dropdown">
-          <a href="">Dropdown</a>
-          <ul class="dropdown-menu">
-            <li><a href="">Dropdown</a></li>
-            <li><a href="">Dropdown</a></li>
-            <li><a href="">Dropdown</a></li>
-            <li><a href="">Dropdown</a></li>
-            <li><a href="">Dropdown</a></li>
-            <li><a href="">Dropdown</a></li>
-          </ul>
-        </li>
-        <li><a href="#contacts">Contacts</a></li>
+        <li><a href="#contacts" class="navlink">Contacts</a></li>
       </ul>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </nav>
 
     <main>
       <section class="hero">
         <div class="hero-container">
-          <div>
+          <div class="hero-first">
             <h4 class="cook">EXPERIENCE CULINARY EXCELLENCE</h4>
 
             <h1 class="culinary">
               Savor Every Moment At <br />
               Wiz's Diner
             </h1>
+            <h1 class="culinary2">Savor Every Moment At Wiz's Diner</h1>
 
             <p class="story">
-              Indulge in authentic Niigerian cuisine crafted with passion and
+              Indulge in authentic Nigerian cuisine crafted with passion and
               the finest ingredients. From traditional recipes passed down
               through generations to innovative culinary creations, we offer an
               unforgettable experience.
             </p>
 
-            <button type="submit" class="btn1">Book A Table</button>
+            <div class="buttondiv"><button type="submit" class="btn1">Book A Table</button>
 
             <button type="submit" class="btn2">View Menu</button>
+          </div>
           </div>
           <div class="container">
             <form action="">
@@ -127,50 +114,42 @@
             </form>
           </div>
         </div>
-        <div class="Scroll"><h4>Scroll to explore</h4></div>
+        <!-- <div class="Scroll"><h4>Scroll to explore</h4></div> -->
         <div class="bottom">
-          <div class="clock"><i class="fa-regular fa-clock"></i> OPEN 24/7</div>
+          <!-- <div class="clock"><i class="fa-regular fa-clock"></i> OPEN 24/7</div> -->
         </div>
 
         <!-- </div> -->
+      <div class="overlay"></div>
       </section>
 
       <section class="about-section" id="about">
         <div class="abt-head">
           <h1>ABOUT</h1>
-          <p>
-            Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
-            consectetur velit
-          </p>
+          
         </div>
         <div class="about-container">
           <div class="abt-text">
             <h2>Experience Our Unique Approach</h2>
             <p>
-              nteger posuere erat a ante venenatis dapibus posuere velit
-              aliquet. Vestibulum id ligula porta felis euismod semper.
+              At Wiz's Diner, we blend bold flavours with a dash of creativity, using only the freshest ingredients and sustainable sourcing. 
             </p>
             <p>
-              Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-              Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis
-              vestibulum. Curabitur blandit tempus porttitor.
+              From our signature jollof rice to our appetizing treats, every dish is taste adventure. Come for the food, stay for the vibe. We've got a spot just for you.
             </p>
             <div class="abt-text-flex">
               <div class="abt2">
-                <i class="fa-solid fa-trophy"></i>
+                <i class="fa-solid fa-award"></i>
                 <h3>Exceptional Service</h3>
                 <p>
-                  Donec sed odio dui. Nulla vitae elit libero, a pharetra augue.
-                  Donec sed odio dui. Nulla vitae elit libero, a pharetra augue.
+               Our team is passionate about delivering exceptional service, making you feel like a VIP from the moment you walk in. Whether it's a quick bite or a special occassion, we're here to make it unforgettable.
                 </p>
               </div>
               <div class="abt2">
                 <i class="fa-solid fa-trophy"></i>
                 <h3>Industry Recognition</h3>
                 <p>
-                  raesent commodo cursus magna, vel scelerisque nisl consectetur
-                  et. raesent commodo cursus magna, vel scelerisque nisl
-                  consectetur et.
+                 Proudly recognized for our commitment to excellence, Wiz's Diner has earned top ratings and awards from industry leaders. Join our list of satisfied customers and experience the best of the best
                 </p>
               </div>
             </div>
@@ -188,11 +167,6 @@
       <section class="menu" id="menu">
         <h2 class="me1">MENU</h2>
 
-        <p class="me2">
-          Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
-          consectetur velit
-        </p>
-
         <div class="menu-nav">
           <ul>
             <li class="dish">ALL DISHES</li>
@@ -208,10 +182,12 @@
               <img src="./img/photo-1555072956-7758afb20e8f.avif" alt="" />
             </div>
             <div class="menu-text">
-              <h2>rosciutto-Wrapped Asparagus</h2>
+              <h2>
+                Pizza
+              </h2>
               <p>
-                Vivamus tempor magna et tempus elementum. Sed consequat libero
-                vel mauris cursus.
+                Our Pizzas are made with love, using fresh ingredients and crafted to perfection.
+                 From classic favourites to signature creations, every bite is a taste sensation.
               </p>
             </div>
           </div>
@@ -221,10 +197,11 @@
               <img src="./img/icecream sunday.avif" alt="" />
             </div>
             <div class="menu-text">
-              <h2>rosciutto-Wrapped Asparagus</h2>
+              <h2>
+                Chocolate Mousse Dessert
+              </h2>
               <p>
-                Vivamus tempor magna et tempus elementum. Sed consequat libero
-                vel mauris cursus.
+                Our Chocolate Mousse is a decadent dessert made with dark or milk chocolate, cream and sugar whipped to a light and airy texture. Our Chocolate Mousse Dessert is a must try
               </p>
             </div>
           </div>
@@ -234,10 +211,11 @@
               <img src="./img/isiewu.jpg" alt="" />
             </div>
             <div class="menu-text">
-              <h2></h2>
+              <h2>
+                Isi ewu
+              </h2>
               <p>
-                Vivamus tempor magna et tempus elementum. Sed consequat libero
-                vel mauris cursus.
+                Isi ewu, a classic Nigerian delicacy, slow-cooked to perfection with tender goat head, aromatic spices, and fresh herbs. A must-try for all food lovers. Don't miss out on our authentic food sensation.
               </p>
             </div>
           </div>
@@ -248,10 +226,11 @@
               <img src="./img/sha1.avif" alt="" />
             </div>
             <div class="menu-text">
-              <h2>rosciutto-Wrapped Asparagus</h2>
+              <h2>
+             Shawarma
+              </h2>
               <p>
-                Vivamus tempor magna et tempus elementum. Sed consequat libero
-                vel mauris cursus.
+                Shawarma like you've never had. Our juicy shawarma is made with tender chicken or beef, wrapped in soft pita bread with fresh veggies and signature sauce. A taste adventure on the go!!
               </p>
             </div>
           </div>
@@ -261,10 +240,11 @@
               <img src="./img/spag2.jpg" alt="" />
             </div>
             <div class="menu-text">
-              <h2>rosciutto-Wrapped Asparagus</h2>
+              <h2>
+                Sphagetti and Meatballs
+              </h2>
               <p>
-                Vivamus tempor magna et tempus elementum. Sed consequat libero
-                vel mauris cursus.
+                A classic Italian dish gets a Nigerian twist. Tender meatballs in rich tomato sauce, served with perfectly cooked spaghetti. Comfort food at its best.
               </p>
             </div>
           </div>
@@ -274,10 +254,11 @@
               <img src="./img/jollof rice n kebab.avif" alt="" />
             </div>
             <div class="menu-text">
-              <h2>rosciutto-Wrapped Asparagus</h2>
+              <h2>
+                Jollof Rice and Kebab
+              </h2>
               <p>
-                Vivamus tempor magna et tempus elementum. Sed consequat libero
-                vel mauris cursus.
+                Our Jollof Rice and Kebab combo is a match made in heaven. Spicy Jollof rice paired with sizzling chicken and beef  kebabs. A taste of West Africa, served fresh.
               </p>
             </div>
           </div>
@@ -288,10 +269,11 @@
               <img src="./img/burger.avif" alt="" />
             </div>
             <div class="menu-text">
-              <h2>rosciutto-Wrapped Asparagus</h2>
+              <h2>
+                Burger
+              </h2>
               <p>
-                Vivamus tempor magna et tempus elementum. Sed consequat libero
-                vel mauris cursus.
+                Our juicy beef and chicken burgers are loaded with fresh toppings and signature sauces. It is a taste explosion in every bite.
               </p>
             </div>
           </div>
@@ -301,10 +283,11 @@
               <img src="./img/suya.jpg" alt="" />
             </div>
             <div class="menu-text">
-              <h2>rosciutto-Wrapped Asparagus</h2>
+              <h2>
+                Suya
+              </h2>
               <p>
-                Vivamus tempor magna et tempus elementum. Sed consequat libero
-                vel mauris cursus.
+                Our tender beef or chicken suya is grilled to perfection with a blend of Nigerian spices. Served with spicy sauce and slides.
               </p>
             </div>
           </div>
@@ -314,11 +297,84 @@
               <img src="./img/fried2.jpg" alt="" />
             </div>
             <div class="menu-text">
-              <h2>rosciutto-Wrapped Asparagus</h2>
+              <h2>Fried Rice </h2>
               <p>
-                Vivamus tempor magna et tempus elementum. Sed consequat libero
-                vel mauris cursus.
+                Our flavourful fried rice is loaded with chicken, veggies and spices. A classic Nigerian food that is perfect any time
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="chefs" id="chefs">
+        <h1 class="che">CHEFS</h1>
+        <div class="chefhead">
+          <div class="chefbody">
+            <div class="chefimg1">
+              <img src="./img/black1.jpg" alt="" />
+            </div>
+            <div class="cheftext1">
+              <h1>Gordon Ramsay</h1>
+              
+              <h5 class="meet">
+                Meet our Head Chef
+              </h5>
+              <p>
+              </h5>
+                Gordon Ramsay brings her
+                fiery passion to our kitchen! Michellin starred and globally renowned,she is cooking up Nigerian favourites with an international twist.
+              </p>
+              <p>
+                Her culinary journey spans decades with stops at top kitchens worldwide. At our restaurant, he blends global techniques with local Nigerian Flavors.
+              </p>
+            </div>
+          </div>
+
+          <div class="chefimages">
+            <div class="chef-content">
+              <div class="chef1">
+                <img src="./img/marcus samuelson.jpg" alt="" />
+              </div>
+              <div class="cheftext2">
+                <h3>Marcus Samuelson</h3>
+                <p>Sous Chef</p>
+                
+              </div>
+            </div>
+
+            <div class="chef-content">
+              <div class="chef1">
+                <img src="./img/black4.jpg "          
+                alt="" />
+              </div>
+              <div class="cheftext2">
+                <h3>Antonio Amorelli</h3>
+                <p>Grill Master</p>
+                
+              </div>
+            </div>
+
+            <div class="chef-content">
+              <div class="chef1">
+                <img src="./img/black5.jpg                   "
+                 alt="">
+              </div>
+              <div class="cheftext2">
+                <h3>Sheikh G Chaska</h3>
+                <p>Line Cook</p>
+                
+              </div>
+            </div>
+
+            <div class="chef-content">
+              <div class="chef1">
+                <img src="./img/black1.jpg" alt="" />
+              </div>
+              <div class="cheftext2">
+                <h3>Buddy Valastro</h3>
+                <p>Pastry Chef</p>
+                
+              </div>
             </div>
           </div>
         </div>
@@ -346,11 +402,9 @@
               </div>
 
               <div class="valcontent">
-                <h3>Seasonal Harvest Menu</h3>
+                <h3>Valentine's Vibe </h3>
                 <p>
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                  occaecat cupidatat non proident.
+                  Get 10% off all orders this Valentine. treat yourself or surprise a loved one with our delicious dishes.
                 </p>
               </div>
             </div>
@@ -361,11 +415,9 @@
                 <img src="./img/valentine special.jpg" alt="" />
               </div>
               <div class="valcontent">
-                <h3>Seasonal Harvest Menu</h3>
+                <h3>Valentine Sweet Treat </h3>
                 <p>
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                  occaecat cupidatat non proident.
+                 Our Special Valentine Chocolate is here! Rich, decadent and made with love. pair it with a romantic dinner and make this Valentine unforgettable
                 </p>
               </div>
             </div>
@@ -385,15 +437,15 @@
               <li><i class="fa-solid fa-star-half"></i></li>
             </div>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque
-              aut fugit laborum quas deleniti neque, debitis quaerat
-              necessitatibus ducimus quo?
+             Food was amazing and service was top-notch. Best restaurant joints in the town.
             </p>
             <div class="test-text">
               <img src="./img/fresh.webp" alt="" />
               <div>
-                <h4>karanblanks</h4>
-                <span>@karanblanks</span>
+                <h4>
+                  Sarah Kelly
+                </h4>
+                <span>@sarahkelly5
               </div>
             </div>
           </div>
@@ -406,15 +458,16 @@
               <li><i class="fa-solid fa-star"></i></li>
             </div>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque
-              aut fugit laborum quas deleniti neque, debitis quaerat
-              necessitatibus ducimus quo?
+              The fried rice is a game-changer, adds a twist to the classic.
             </p>
             <div class="test-text">
-              <img src="./img/fresh.webp" alt="" />
+              <img src="./img/0b41e8b69833497573fb47693153989b.jpg         "
+              alt="">
               <div>
-                <h4>karanblanks</h4>
-                <span>@karanblanks</span>
+                <h4>John Doe </h4>
+                <span>
+                  @johndoe
+                </span>
               </div>
             </div>
           </div>
@@ -428,15 +481,14 @@
               <li><i class="fa-solid fa-star"></i></li>
             </div>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque
-              aut fugit laborum quas deleniti neque, debitis quaerat
-              necessitatibus ducimus quo?
+             The Valentine special is a banger. It is the perfect spot for a date night, the ambience was everything
             </p>
             <div class="test-text">
-              <img src="./img/fresh.webp" alt="" />
+              <img src="./img/sim.jpg" 
+              alt="" />
               <div>
-                <h4>karanblanks</h4>
-                <span>@karanblanks</span>
+                <h4>Karan Banks </h4>
+                <span>@karanbanks</span>
               </div>
             </div>
           </div>
@@ -458,16 +510,14 @@
         <div>
           <h2 class="wiz">Wiz's Diner</h2>
           <p>
-            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-            posuere cubilia curae. Donec velit neque auctor sit amet aliquam vel
-            ullamcorper sit amet ligula.
+            Serving Nigeria, one plate at a time.
+            We offer the best services in the whole of Nigeria.
           </p>
 
-          <!-- <div emailbtn>
+          <div class="emailbtn">
             <input type="email" placeholder="Enter your E-mail" /><span>
-              <button type="submit" class="btn5">Enter</button></span
-            >
-          </div> -->
+              <button type="submit" class="btn5"><i class="fa-solid fa-paper-plane"></i>
+          </div>
         </div>
 
         <div>
@@ -477,16 +527,22 @@
               <i class="fa-solid fa-angle-right"></i> <a href="">About</a>
             </li>
             <li>
-              <i class="fa-solid fa-angle-right"></i> <a href="">About</a>
+              <i class="fa-solid fa-angle-right"></i> <a href="">
+                Careers
+              </a>
             </li>
             <li>
-              <i class="fa-solid fa-angle-right"></i> <a href="">About</a>
+              <i class="fa-solid fa-angle-right"></i> <a href="">
+              Press
+              </a>
             </li>
             <li>
-              <i class="fa-solid fa-angle-right"></i> <a href="">About</a>
+              <i class="fa-solid fa-angle-right"></i> <a href="">Blog
             </li>
             <li>
-              <i class="fa-solid fa-angle-right"></i> <a href="">About</a>
+              <i class="fa-solid fa-angle-right"></i> <a href="">
+                Contact
+              </a>
             </li>
           </ul>
         </div>
@@ -495,19 +551,25 @@
           <h3>Solution</h3>
           <ul>
             <li>
-              <i class="fa-solid fa-angle-right"></i> <a href="">About</a>
+              <i class="fa-solid fa-angle-right"></i> <a href="">Digital Strategy
             </li>
             <li>
-              <i class="fa-solid fa-angle-right"></i> <a href="">About</a>
+              <i class="fa-solid fa-angle-right"></i> <a href="">Cloud Computing
             </li>
             <li>
-              <i class="fa-solid fa-angle-right"></i> <a href="">About</a>
+              <i class="fa-solid fa-angle-right"></i> <a href="">
+                Data Analytics
+              </a>
             </li>
             <li>
-              <i class="fa-solid fa-angle-right"></i> <a href="">About</a>
+              <i class="fa-solid fa-angle-right"></i> <a href="">
+                AI Solutions
+              </a>
             </li>
             <li>
-              <i class="fa-solid fa-angle-right"></i> <a href="">About</a>
+              <i class="fa-solid fa-angle-right"></i> <a href="">
+                CyberSecurity
+              </a>
             </li>
           </ul>
         </div>
@@ -516,21 +578,32 @@
           <h3>Company</h3>
           <ul>
             <li>
-              <i class="fa-solid fa-location-dot"></i> 2847 Maple Avenue Los
-              Angeles, CA 90210 United States
+              <i class="fa-solid fa-location-dot"></i> No 282, Rumuokwurusi
+              Rivers State
             </li>
-            <li><i class="fa-solid fa-phone"></i> +1 (555) 987-6543</li>
-            <li><i class="fa-solid fa-envelope"></i> contact@example.com</li>
+            <li><i class="fa-solid fa-phone"></i> +234 8066779559</li>
+            <li><i class="fa-solid fa-envelope"></i> wodiexcel0@gmail.com</li>
             <div class="social">
-              <span><i class="fa-brands fa-facebook"></i></span>
-              <span><i class="fa-brands fa-linkedin"></i></span>
-              <span><i class="fa-brands fa-discord"></i></span>
-              <span><i class="fa-brands fa-whatsapp"></i></span>
-              <span><i class="fa-brands fa-youtube"></i></span>
+              <span
+                ><a href=""><i class="fa-brands fa-facebook"></i></a
+              ></span>
+              <span
+                ><a href=""><i class="fa-brands fa-linkedin"></i></a
+              ></span>
+              <span
+                ><a href=""><i class="fa-brands fa-discord"></i></a
+              ></span>
+              <span
+                ><a href=""><i class="fa-brands fa-whatsapp"></i></a
+              ></span>
+              <span
+                ><a href=""><i class="fa-brands fa-youtube"></i></a
+              ></span>
             </div>
           </ul>
         </div>
       </div>
     </footer>
+    <script src="./screentouch.js"></script>
   </body>
 </html>
